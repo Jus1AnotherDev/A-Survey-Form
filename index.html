@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Tribute page.">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <h1 id="title">A Random Survey Form</h1>
+    <div id="form-outer">
+    <p id="description">Just fill out this random survey form and help us do nothing</p>
+    <form id="survey-form">
+        <div class="labels">
+        <label for="name" id="name-label">* Name: </label>
+        </div>
+        <div class="rightTab">
+        <input type="text" name="name" id="name" placeholder="Name" required><br>
+        </div>
+        <div class="labels">
+        <label for="email" id="email-label">* Email: </label>
+        </div>
+        <div class="rightTab">
+        <input type="email" id="email" name="email" required placeholder="Email"><br>
+        </div>
+        <div class="labels">
+        <label for="age" id="number-label">* Age: </label>
+        </div>
+        <div class="rightTab">
+        <input type="number" id="number" name="age" min="8" max="150" placeholder="Age"><br>
+        </div>
+        <div class="labels">
+        <label for="role" id="role-field">Which option best describes your current role? </label>
+        </div>
+        <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="halftime">Half Time</option>
+            <option value="fulltime">Full Time</option>
+            <option value="preferno">Prefer not to say</option>
+        </select><br>
+        </div>
+        <div class="labels">
+        <label for="recommend" id="recommend-label">Would you recommend us to a  friend? </label>
+        </div>
+        <div class="rightTab">
+        <ul>
+            <li><input type="radio" name="radiobuttons" value="0">Definately</li>
+            <li><input type="radio" name="radiobuttons" value="1">Maybe</li>
+            <li><input type="radio" name="radiobuttons" value="2">Not Sure</li>
+        </ul>
+        </div>
+        <div class="labels">
+        <label for="like" id="like-field">What do you like most about us?</label>
+        </div>
+        <div class="rightTab">
+        <select>
+            <option disabled selected value>Select an option</option>
+            <option value="this">This</option>
+            <option value="that">That</option>
+            <option value="Everything">Everything</option>
+        </select><br>
+        </div>
+        <div class="labels">
+        <label for="preference" name="preferences" id="preference_field">Things that should be improved in the future:</label>
+        </div>
+        <div class="rightTab">
+        <ul>
+            <li><input type="checkbox" value="this">This</li>
+            <li><input type="checkbox" value="that">That</li>
+            <li><input type="checkbox" value="that over there">That over there</li>
+        </ul>
+        </div>
+        <div class="labels">
+        <label for="suggestions" name="suggestions">Have any suggestions? Please write them down here:</label>
+        </div>
+        <div class="rightTab">
+        <textarea id="commments" class="input-field" style="height:50px;resize:veretical;" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="wrapper">
+        <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
+  </body>
+</html>
